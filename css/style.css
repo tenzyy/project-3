@@ -1,12 +1,57 @@
-body{
-    background-color: honeydew;
-}
-h1{
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+* {
+    box-sizing: border-box;
 }
 
-news.{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: grey;
+body, html {
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: "Open Sans", serif;
+    color: white;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logo {
+    background-image: url("../images/nyt-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 300px;
+}
+
+select {
+    color: black;
+    background-color: white;
+}
+
+.sectionlist, .newssection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.copyright {
+    color: gray;
+    text-align: center;
+    
 }

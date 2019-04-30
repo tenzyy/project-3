@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    border: 1px solid oldlace;
 }
+
 
 body, html {
     font-size: 14px;
@@ -15,11 +17,12 @@ html {
 }
 
 body {
+
     background-color: black;
     font-family: "Open Sans", serif;
-    color: white;
+
 }
-body {
+.maincontainer{
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +37,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: auto;
-    height: 300px;
+    height: 60vh;
 }
 
 select {
@@ -47,11 +50,13 @@ select {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    color:white;
 }
 
-.copyright {
-    color: gray;
+footer {
+    color:#c2c2c2;
     text-align: center;
+    height: 100px;
     
 }

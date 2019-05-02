@@ -1,7 +1,5 @@
 {
     "extends": "eslint:recommended",
-    "rules": {
-    
         "rules": {
             "no-alert": 1,
             "camelcase": 1,

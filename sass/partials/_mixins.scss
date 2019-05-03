@@ -1,0 +1,15 @@
+// add mixins for media queries
+
+
+@mixin tablet {
+    @media(min-width: $tablet-width){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: $desktop-width){
+        @content;
+    }       
+}
+

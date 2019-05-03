@@ -13,6 +13,10 @@ $('#article-select').on('change', function () {
             url: " https://api.nytimes.com/svc/topstories/v2/" + selectedCategory + ".json?api-key=0rDLQOWB9Rgp7vmdbqIgHe7T5j6S389t"
         })
             .done(function (data) {
+
+                // filter data and filter data. results 
+                // get rid of other multimedia urls that don't exist 
+                
                  $(".newsarticles").empty();
                 $.each(data.results, function (index, article) {
                     const content = article.abstract;

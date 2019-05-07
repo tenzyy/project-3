@@ -1,4 +1,5 @@
 
+
 // 1: article-select add an event for .on('change')
 // 2: when it does change try to get the value
 // 3: use the value in the .ajax request e.g. " https://api.nytimes.com/svc/topstories/v2/" + variableVaule + ".json?api-key=0rDLQOWB9Rgp7vmdbqIgHe7T5j6S389t"
@@ -7,6 +8,8 @@
 $('#article-select').on('change', function () {
     const selectedCategory = $(this).val();
     if (selectedCategory !== '') {
+        
+   
 
         $.ajax({
             method: 'get',
@@ -36,7 +39,18 @@ $('#article-select').on('change', function () {
                     <img class= "articleimage" src = "${image}"/></a>`);
 
 
-                
+                   
+                        // $(window).on('scroll',function(){
+                        //     if($(window).scrollTop()){
+                        //         $('header').addClass('active')
+                        //     }
+                        //     else{
+                        //         $('header').removeClass('active')
+
+                        //     }
+                            
+ 
+                        })
                 
                 });
             });

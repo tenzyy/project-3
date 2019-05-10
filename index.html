@@ -2,50 +2,49 @@
 <html lang="en">
 
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./build/css/style.min.css">
     <title>Instanews</title>
-
 </head>
 
 <body>
-    <header class="headercontainer">
-        <div>
-            <img class ="logo" src="../images/nyt-logo.svg" />
-        </div>
-        <div class="dropdownlist">Choose a section:
+    <!-- logo and selectlist (header)-->
+   
+    <header class="banner">
+
+        <img class="logo" src="images/nyt-logo.svg" />
+        <div class="choose">Choose a section:
             <form class="sectionbtn">
                 <select id="article-select" name="newssection">
-                    <option value="">-- Pick an option --</option>
+                    <option value="nooption">-- Pick an option --</option>
                     <option value="business">Business</option>
                     <option value="sports">Sports</option>
                     <option value="arts">Arts</option>
                     <option value="health">Health</option>
-                    <option value="home">Home</option>
+                    <option value="home">World</option>
                     <option value="travel">Travel</option>
-                    <!-- <option value="business">Business</option>
-                    <option value="sports">Sports</option>
-                    <option value="arts">Arts</option> -->
                 </select>
             </form>
         </div>
+<!-- end of header -->
     </header>
+    <img class="loader" src="index.square-circle-preloader.svg" />
+
+
     <main>
-<div class="newsarticles">
-</div>
+        <div class="newsarticles">
+        </div>
     </main>
     <footer>
-            <p>&copy; Copyright 2016 INSTANEWS</p>
+        <p>&copy; Copyright 2016 INSTANEWS</p>
         </div>
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src ="./build/js/script.min.js"> </script>
+    <script src="./build/js/script.min.js"> </script>
 </body>
 
 </html>

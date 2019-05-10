@@ -12,27 +12,29 @@
 
 <body>
     <!-- logo and selectlist (header)-->
-   
-    <header class="banner">
 
-        <img class="logo" src="images/nyt-logo.svg" />
-        <div class="choose">Choose a section:
-            <form class="sectionbtn">
-                <select id="article-select" name="newssection">
-                    <option value="nooption">-- Pick an option --</option>
-                    <option value="business">Business</option>
-                    <option value="sports">Sports</option>
-                    <option value="arts">Arts</option>
-                    <option value="health">Health</option>
-                    <option value="home">World</option>
-                    <option value="travel">Travel</option>
-                </select>
-            </form>
-        </div>
-<!-- end of header -->
+    <header>
+        <img class="logo" src="images/nyt-logo.svg" alt="new york times logo" />
+       <div class="selector">
+
+            <label for="article-select" class="selectortext">Choose a section</label>
+                    <select id="article-select" name="newssection">
+                        <option value="nooption">-- Pick an option --</option>
+                        <option value="business">Business</option>
+                        <option value="sports">Sports</option>
+                        <option value="arts">Arts</option>
+                        <option value="health">Health</option>
+                        <option value="home">World</option>
+                        <option value="travel">Travel</option>
+                    </select>
+               
+       </div>
+        
+        <img class="loader" src="images/loader.svg" alt="animated loader svg " />
+
+
+        <!-- end of header -->
     </header>
-    <img class="loader" src="index.square-circle-preloader.svg" />
-
 
     <main>
         <div class="newsarticles">
@@ -40,7 +42,6 @@
     </main>
     <footer>
         <p>&copy; Copyright 2016 INSTANEWS</p>
-        </div>
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

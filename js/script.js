@@ -2,19 +2,19 @@
 
 $('#article-select').on('change', function () {
     const selectedCategory = $(this).val();
-   if(selectedCategory == "nooption"){
-    $(".newsarticles").html("");
-   }
+    if (selectedCategory == "nooption") {
+        $(".newsarticles").html("");
+    }
     else if (selectedCategory !== '') {
         $(".loader").show();
-       
+
 
         $.ajax({
             method: 'get',
             url: " https://api.nytimes.com/svc/topstories/v2/" + selectedCategory + ".json?api-key=0rDLQOWB9Rgp7vmdbqIgHe7T5j6S389t"
-        })  
-    
-        
+        })
+
+
             .done(function (data) {
                 $(".loader").hide(data);
                 $(".newsarticles").html("");
@@ -27,22 +27,23 @@ $('#article-select').on('change', function () {
                     const image = article.multimedia[4].url;
                     const url = article.url;
 
-                
+
                     $(".newsarticles").append(`<a href ="${url}">
                     <p class ="content">${content}</p></div>
                     <title>${title}</title>
                     <img class= "articleimage" src = "${image}"/></a>`);
-
-                }).fail(function () {
-                    $('.newsarticles').append('Sorry there was an error.');
-                  
                 });
+
+            }).fail(function () {
+                $('.newsarticles').append('Sorry there was an error.');
+
+
 
             });
     }
-   
-    
-    
+
+
+
 });
 
 

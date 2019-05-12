@@ -354,6 +354,9 @@ html {
     color: white;
     text-decoration: none;
     position: relative; }
+    body a img,
+    html a img {
+      max-width: 100%; }
   body .loader,
   html .loader {
     width: 50px;
@@ -361,17 +364,14 @@ html {
     display: none; }
   body body,
   html body {
-    height: 100vh;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+            flex-direction: column; }
   body header,
   html header {
     display: -webkit-box;
@@ -381,25 +381,25 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    body header text,
+    html header text {
+      text-align: center; }
     body header label,
     html header label {
       text-align: center;
       display: block; }
-  body .logo,
-  html .logo {
-    padding: 20px; }
+    body header .logo,
+    html header .logo {
+      padding: 40px; }
   body .selectortext,
   html .selectortext {
     padding: 10px; }
-  body img,
-  html img {
-    max-width: 100%; }
   body select,
   html select {
     color: black;
@@ -419,18 +419,19 @@ html {
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     margin-top: 20px;
-    background-position: center; }
+    background-position: center;
+    position: relative; }
     body .newsarticles p,
     html .newsarticles p {
       position: absolute;
       bottom: 0%;
       background-color: #000;
       opacity: 0.8; }
-  body footer p,
-  html footer p {
+  body footer,
+  html footer {
     color: #c2c2c2;
     text-align: center;
-    margin: 30px; }
+    padding: 20px; }
   @media screen and (min-width: 600px) {
     body .newsarticles,
     html .newsarticles {

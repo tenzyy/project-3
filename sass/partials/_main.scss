@@ -16,44 +16,45 @@ html {
     color: white;
     text-decoration: none;
     position: relative;
+    img {
+      max-width: 100%;
+    }
   }
   .loader {
     width: 50px;
     height: 50px;
     display: none;
   }
-  body{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-  }
-  header{
+  body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    label{
+    flex-grow: 1;
+    text {
+      text-align: center;
+    }
+    label {
       text-align: center;
       display: block;
     }
+    .logo {
+      padding: 40px;
+    }
   }
 
-  .logo{
-    padding: 20px;
-  }   
-  .selectortext{
-    padding:10px;
+  .selectortext {
+    padding: 10px;
   }
-  img {
-    max-width: 100%;
-  }
- 
   select {
     color: black;
     background-color: white;
   }
- 
   .articleimage {
     margin-top: auto;
     object-fit: cover;
@@ -70,6 +71,7 @@ html {
     grid-auto-rows: 1fr;
     margin-top: 20px;
     background-position: center;
+    position: relative;
     & p {
       position: absolute;
       bottom: 0%;
@@ -78,16 +80,14 @@ html {
     }
   }
   // footer - copyright
-  footer p {
+  footer {
     color: #c2c2c2;
     text-align: center;
-    margin: 30px;
-  
+    padding: 20px;
   }
 
   // media queries for desktop and tablet using css grid
   @media screen and (min-width: 600px) {
- 
     .newsarticles {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -95,14 +95,14 @@ html {
       background-position: center;
       margin-top: 30px;
     }
-    header{
+    header {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       flex-grow: 1;
-      text{ 
-        text-align:center;
+      text {
+        text-align: center;
       }
     }
   }
@@ -114,10 +114,8 @@ html {
         color: white;
       }
     }
-    header{
+    header {
       align-self: flex-start;
     }
   }
 }
-
-

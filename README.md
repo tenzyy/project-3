@@ -22,6 +22,7 @@
 
 
 ### NOTES
+<br>Have to refresh webpage few times to load the right format
 <br>Had challenges making sure the inital pages were responsive
 "loader" svg found online from 'http://freepreloaders.com/'
 

@@ -75,7 +75,7 @@ html {
     & p {
       position: absolute;
       bottom: 0%;
-      background-color: #000;
+      background-color:black;
       opacity: 0.8;
     }
   }
@@ -83,7 +83,7 @@ html {
   footer {
     color: #c2c2c2;
     text-align: center;
-    padding: 20px;
+   padding:10px;
   }
 
   // media queries for desktop and tablet using css grid

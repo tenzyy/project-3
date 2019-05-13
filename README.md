@@ -3,23 +3,26 @@
 
 
 *HTML*
-containing logos, selectors, loader and copyright information.
+<br>containing two svgs: Logo & loader 
+<br>selector and copyright information
 
 *CSS/SCSS*
--first time using SASS, project contains nesting method
--Css stylesheet using mobile first.
--Tablet @ (min-width 600px)
--Desktop @(min-width 1000px)
--text transform for news articles on hover
+
+<br>-first time using SASS, project contains nesting method
+<br>-Css stylesheet using mobile first.
+<br>-Tablet @ (min-width 600px)
+<br>-Desktop @(min-width 1000px)
+<br>-text transform for news articles on hover
 
 *JQUERY*
--getting data from NYT using AJAX 'GET' method.
--if else statement for loader svg to hide/show
--only selected category will appear on page
--fail function incase of any errors loading data
+<br>-getting data from NYT using AJAX 'GET' method.
+<br>-if else statement for loader svg to hide/show
+<br>-only selected category will appear on page
+<br>-fail function incase of any errors loading data
 
 
 ### NOTES
-Had challenges making sure the inital pages were responsive
+<br>Had challenges making sure the inital pages were responsive
 "loader" svg found online from 'http://freepreloaders.com/'
-Satisfied with project but definitely want to add more animation on images of articles.
+
+<br>Satisfied with project but definitely want to add more animation on images of articles.

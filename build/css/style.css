@@ -352,11 +352,10 @@ html {
   body a,
   html a {
     color: white;
-    text-decoration: none;
-    position: relative; }
+    text-decoration: none; }
     body a img,
     html a img {
-      max-width: 100%; }
+      width: 300px; }
   body .loader,
   html .loader {
     width: 50px;
@@ -406,25 +405,30 @@ html {
     background-color: white; }
   body .articleimage,
   html .articleimage {
-    margin-top: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%; }
-  body .content:hover,
-  html .content:hover {
-    text-transform: uppercase; }
+    -o-object-fit: fit cover;
+       object-fit: fit cover;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: auto;
+    top: 0 auto; }
+  body .content,
+  html .content {
+    position: relative;
+    width: 100%;
+    margin-top: 55%; }
+    body .content:hover,
+    html .content:hover {
+      text-transform: uppercase; }
   body .newsarticles,
   html .newsarticles {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 300px;
     margin-top: 20px;
-    background-position: center;
-    position: relative; }
+    background-position: top; }
     body .newsarticles p,
     html .newsarticles p {
-      position: absolute;
-      bottom: 0%;
       background-color: black;
       opacity: 0.8; }
   body footer,
@@ -435,11 +439,11 @@ html {
   @media screen and (min-width: 600px) {
     body .newsarticles,
     html .newsarticles {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-auto-rows: 300px;
-      background-position: center;
+      grid-template-columns: 1fr 1fr;
       margin-top: 30px; }
+      body .newsarticles .articleimage,
+      html .newsarticles .articleimage {
+        width: 50%; }
     body header,
     html header {
       display: -webkit-box;
@@ -462,6 +466,12 @@ html {
       html header text {
         text-align: center; } }
   @media screen and (min-width: 1000px) {
+    body .newsarticles,
+    html .newsarticles {
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      body .newsarticles .articleimage,
+      html .newsarticles .articleimage {
+        width: 25%; }
     body footer p,
     html footer p {
       text-align: left;

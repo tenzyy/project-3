@@ -3,10 +3,11 @@
 
 *DESKTOP VIEW*
 <img src="images/desktop.png" width ="900px" height="350px"/>
-
+<br>
 
 *TABLET VIEW*
 <img src="images/tablet.png" width ="400px" height="350px"/>
+<br>
 *HTML*
 <br>containing two svgs: Logo & loader 
 <br>selector and copyright information

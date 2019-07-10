@@ -1,7 +1,12 @@
 #Project 3- INSTANEWS
 ##Description: Responsive web design using mobile first strategy and pulling required data from New York Times API. Also contains a built folder containg compiled JS and CSS
-<img src="images/desktop.png" width ="350px" height="350px"/>
 
+*DESKTOP VIEW*
+<img src="images/desktop.png" width ="900px" height="350px"/>
+
+
+*TABLET VIEW*
+<img src="images/tablet.png" width ="400px" height="350px"/>
 *HTML*
 <br>containing two svgs: Logo & loader 
 <br>selector and copyright information
